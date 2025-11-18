@@ -83,7 +83,7 @@ void ll_push_next(linked_list * itr, int init_val)
 void ll_pop_prev(linked_list * itr)
 {
   if (itr == NULL || itr->prev == NULL) return;
-  struct linked_list * temp = itr->prev->prev;
+  linked_list * temp = itr->prev->prev;
   free(itr->prev);
   itr->prev = temp;
   if (temp != NULL) temp->next = itr;
