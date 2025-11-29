@@ -1,13 +1,12 @@
 // File: linked_list.c
 // Include this file *after* including <stdlib.h>
-struct linked_list
+typedef struct linked_list
 {
   struct linked_list * prev;
   struct linked_list * next;
   int val;
-};
-
-typedef struct linked_list linked_list;
+}
+linked_list;
 
 linked_list * ll_new(int init_val)
 {

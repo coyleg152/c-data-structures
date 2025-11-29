@@ -1,12 +1,11 @@
 // File: queue.c
 // Include this file *after* including <stdlib.h>
-struct node
+typedef struct node
 {
   struct node * next;
   int val;
-};
-
-typedef struct node node;
+}
+node;
 
 typedef struct
 {
